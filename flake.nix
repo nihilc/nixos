@@ -9,7 +9,11 @@
     nixosConfigurations = {
       kronos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [ ./configuration.nix ];
+        modules = [ 
+          ./host/kronos/configuration.nix
+          ./modules/software.nix
+          ./modules/services.nix
+        ];
       };
     };
   };
