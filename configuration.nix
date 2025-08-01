@@ -11,7 +11,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   time.timeZone = "America/Bogota";
-  networking.hostName = "nixos";
+  networking.hostName = "kronos";
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -108,4 +108,5 @@
 
   # NixOS release. Before changing read the documentation
   system.stateVersion = "25.05";
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
