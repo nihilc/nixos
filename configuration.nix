@@ -40,6 +40,7 @@
       layout = "us";
       variant = "";
     };
+    videoDrivers = ["amdgpu"];
   };
   services.libinput.enable = true;
 
@@ -75,6 +76,7 @@
     wget
     tmux
     neovim
+    mangohud
   ];
   environment.variables = {
     EDITOR = "nvim";
@@ -82,6 +84,16 @@
 
   # Software
   programs.firefox.enable = true;
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    extraCompatPackages = [ pkgs.proton-ge-bin ];
+    gamescopeSession.enable = true;
+  };
+  programs.gamescope.enable = true;
+  programs.gamemode.enable = true;
 
   # Services
 
