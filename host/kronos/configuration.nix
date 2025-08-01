@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -13,7 +13,7 @@
   # Enable networking
   networking.hostName = "kronos";
   networking.networkmanager.enable = true;
-  # networking.wireless.enable = true; 
+  # networking.wireless.enable = true;
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
@@ -34,7 +34,7 @@
   };
 
   # Select drivers and keyboard layout.
-  services.xserver.videoDrivers = ["amdgpu"];
+  services.xserver.videoDrivers = [ "amdgpu" ];
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -44,12 +44,18 @@
   users.users.nihilc = {
     isNormalUser = true;
     description = "Christian Cardenas";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
     ];
   };
 
   # NixOS release. Before changing read the documentation
   system.stateVersion = "25.05";
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 }
