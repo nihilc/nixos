@@ -11,11 +11,14 @@
     gnumake
     tmux
     yazi
-    ripgrep
+    htop
+    fzf
     fd
     jq
     zip
     unzip
+    ripgrep
+    ffmpeg-full
 
     # langs
     typst
@@ -23,9 +26,13 @@
     lua
     gcc
     nodejs
-    python3Full
+    python312
+    python312Packages.pip
+    nixd
+    nixfmt-rfc-style
 
     # apps
+    mpv
     vlc
     discord
     obs-studio
