@@ -7,15 +7,36 @@
     git
     curl
     wget
+    tree
+    gnumake
     tmux
+    yazi
+    ripgrep
+    fd
+    jq
+    zip
+    unzip
+
+    # langs
+    typst
+    go
+    lua
+    gcc
+    nodejs
+    python3Full
 
     # apps
+    vlc
+    discord
+    obs-studio
     mangohud
   ];
 
   programs.neovim = {
     enable = true;
     defaultEditor = true;
+    withNodeJs = true;
+    withPython3 = true;
   };
 
   programs.firefox.enable = true;
