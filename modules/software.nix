@@ -19,6 +19,7 @@
     unzip
     ripgrep
     ffmpeg-full
+    starship
 
     # langs
     typst
@@ -38,6 +39,9 @@
     obs-studio
     mangohud
   ];
+
+  programs.zsh.enable = true;
+  programs.zsh.enableCompletion = true;
 
   programs.neovim = {
     enable = true;

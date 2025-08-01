@@ -40,18 +40,6 @@
     variant = "";
   };
 
-  # Define a user account
-  users.users.nihilc = {
-    isNormalUser = true;
-    description = "Christian Cardenas";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-    packages = with pkgs; [
-    ];
-  };
-
   # NixOS release. Before changing read the documentation
   system.stateVersion = "25.05";
   nix.settings.experimental-features = [

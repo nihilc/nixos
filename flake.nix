@@ -13,6 +13,7 @@
           system = "x86_64-linux";
           modules = [
             ./host/kronos/configuration.nix
+            ./modules/users.nix
             ./modules/software.nix
             ./modules/services.nix
           ];
