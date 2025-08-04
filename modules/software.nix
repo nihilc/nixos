@@ -37,6 +37,7 @@
     vlc
     discord
     obs-studio
+    qbittorrent
     mangohud
   ];
 
