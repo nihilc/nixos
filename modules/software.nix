@@ -20,17 +20,23 @@
     ripgrep
     ffmpeg-full
     starship
+    websocat
 
-    # langs
+    # Development
     typst
+    tinymist
+    typstyle
     go
+    gopls
     lua
+    lua-language-server
+    stylua
+    nixd
+    nixfmt-rfc-style
     gcc
     nodejs
     python312
     python312Packages.pip
-    nixd
-    nixfmt-rfc-style
 
     # apps
     mpv
