@@ -16,6 +16,7 @@
             ./modules/users.nix
             ./modules/software.nix
             ./modules/services.nix
+            ./modules/hyprland.nix
           ];
         };
       };
