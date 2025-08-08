@@ -17,8 +17,12 @@
     cliphist # clipboard history manager
     dunst # notification manager
     libnotify # notification lib
-    brightnessctl # control brightness
-    playerctl # control media
+    brightnessctl # brightness
+    gammastep # brightness / night mode
+    playerctl # media control
+    pulsemixer # audio control
+    hyprshot # Screenshots
+    hyprpicker # color picker
   ];
 
   fonts.packages = with pkgs; [
