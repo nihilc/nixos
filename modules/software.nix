@@ -68,4 +68,9 @@
   };
   programs.gamescope.enable = true;
   programs.gamemode.enable = true;
+
+  services.flatpak.enable = true;
+  services.flatpak.packages = [
+    "app.opencomic.OpenComic"
+  ];
 }

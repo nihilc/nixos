@@ -3,10 +3,16 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
   outputs =
-    { self, nixpkgs }:
+    {
+      self,
+      nixpkgs,
+      nix-flatpak,
+      ...
+    }:
     {
       nixosConfigurations = {
         kronos = nixpkgs.lib.nixosSystem {
@@ -17,6 +23,7 @@
             ./modules/software.nix
             ./modules/services.nix
             ./modules/hyprland.nix
+            nix-flatpak.nixosModules.nix-flatpak
           ];
         };
       };
