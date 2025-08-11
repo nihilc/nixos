@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, quickshell, ... }:
 
 {
   programs.hyprland.enable = true;
@@ -9,8 +9,9 @@
     wofi # launcher
 
     # Appearance
-    waybar # status bar
     swww # wallpaper
+    quickshell.packages.${pkgs.system}.default
+    kdePackages.qtdeclarative
 
     # System
     wl-clipboard # cliboard
@@ -29,7 +30,6 @@
   ];
 
   fonts.packages = with pkgs; [
-    jetbrains-mono
     nerd-fonts.jetbrains-mono
   ];
 }
