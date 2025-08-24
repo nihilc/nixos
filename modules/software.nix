@@ -40,8 +40,10 @@
 
     # apps
     mpv
-    vlc
+    youtube-music
     discord
+    gfn-electron
+    osu-lazer-bin
     obs-studio
     qbittorrent
     mangohud
