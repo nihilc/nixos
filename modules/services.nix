@@ -18,6 +18,19 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     # jack.enable = true;
+    extraConfig = {
+      pipewire."context.properties" = {
+        # Increase buffer size
+        "default.clock.quantum" = 1024;
+        "default.clock.min-quantum" = 512;
+        "default.clock.max-quantum" = 2048;
+      };
+      pipewire-pulse."context.properties" = {
+        # Fix to stable frequency
+        "default.clock.rate" = 48000;
+        "default.clock.allowed-rates" = [ 48000 44100 ];
+      };
+    };
   };
 
   # Enable the OpenSSH daemon.
