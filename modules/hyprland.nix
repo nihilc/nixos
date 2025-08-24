@@ -6,7 +6,8 @@
   environment.systemPackages = with pkgs; [
     # Programs
     wezterm # terminal
-    wofi # launcher
+    rofi-wayland # launcher
+    rofimoji
 
     # Appearance
     waybar # status bar
@@ -20,7 +21,7 @@
     brightnessctl # brightness
     gammastep # brightness / night mode
     playerctl # media control
-    pulsemixer # audio control
+    pavucontrol # audio control
     networkmanagerapplet # network control
     hyprshot # Screenshots
     hyprpicker # color picker
@@ -29,6 +30,10 @@
   ];
 
   fonts.packages = with pkgs; [
+    roboto
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
     jetbrains-mono
     nerd-fonts.jetbrains-mono
   ];
