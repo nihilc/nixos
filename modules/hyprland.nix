@@ -28,13 +28,4 @@
     hypridle # idle control
     hyprlock # block screen
   ];
-
-  fonts.packages = with pkgs; [
-    roboto
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    jetbrains-mono
-    nerd-fonts.jetbrains-mono
-  ];
 }

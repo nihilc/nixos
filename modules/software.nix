@@ -44,9 +44,24 @@
     discord
     gfn-electron
     osu-lazer-bin
+    qalculate-gtk
     obs-studio
     qbittorrent
     mangohud
+  ];
+
+  fonts.packages = with pkgs; [
+    # Math
+    ibm-plex
+    lmodern
+    libertinus
+
+    # UI/System
+    roboto
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    nerd-fonts.jetbrains-mono
   ];
 
   programs.zsh.enable = true;
