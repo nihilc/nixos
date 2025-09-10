@@ -67,6 +67,8 @@
   programs.zsh.enable = true;
   programs.zsh.enableCompletion = true;
 
+  programs.ssh.startAgent = true;
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
