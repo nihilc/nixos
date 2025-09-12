@@ -21,6 +21,7 @@
     ffmpeg-full
     starship
     websocat
+    imagemagick
 
     # Development
     typst

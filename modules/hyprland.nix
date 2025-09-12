@@ -5,7 +5,7 @@
 
   environment.systemPackages = with pkgs; [
     # Programs
-    wezterm # terminal
+    kitty # terminal
     rofi-wayland # launcher
     rofimoji
 
