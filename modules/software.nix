@@ -59,6 +59,7 @@
 
     # UI/System
     roboto
+    roboto-mono
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
